@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 ">
+  <div class="container ">
+    <a class="navbar-brand fw-bold " style="color:#f37171 ;" href="#">
+      <i class="bi bi-yelp"></i>
+      MYPROJECT01
+    </a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link " routerLinkActive="active " routerLink="/home">
+          <i class="bi bi-house-heart-fill"></i>
+          Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active " routerLink="/users">
+          Users
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active " routerLink="/contact">
+          <i class="bi bi-chat-right-heart-fill"></i>
+          Contact
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active " routerLink="/about">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container text-center">
+  <router-outlet></router-outlet>
+</div>

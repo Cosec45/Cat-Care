@@ -1,0 +1,49 @@
+input[type=Email] {
+    margin: 8px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+	border-radius: 7px;
+    display: block;
+    border-collapse: collapse;
+    width: 100%;
+}
+input[type=text] {
+    margin: 8px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+	border-radius: 7px;
+    width: 100%;
+}
+textarea {
+    margin: 8px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+	border-radius: 7px;
+    width: 100%;
+}
+input[type=button] {
+	border: none;
+	border-radius: 7px;
+	padding: 10px 40px; /*ปรับขนาดในปุ่ม บนล่าง ซ้ายขวา*/
+	transition: 0.3s;
+	color: #ffffff;
+    background:#f37171;
+  }
+#box{
+    border-radius: 15px;
+    text-align: left;
+    padding-left: 10% ;
+    padding-right: 10%;
+  }
+#lostbox{
+    text-align:left;
+}
+h1,h6{
+    color: #f37171;
+}
