@@ -1,2 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-body{background-color: rgba(62, 32,146, 1);}
+body {
+    background-color: rgba(62, 32, 146, 1);
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Itim', cursive;
+    font-family: 'Noto Serif Thai', serif;
+}
