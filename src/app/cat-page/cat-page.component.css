@@ -3,3 +3,8 @@
     height: 15vw;
     object-fit: cover;
 }
+#nodata{
+    width: fit-content;
+    height: fit-content;
+   font-size: larger;
+}

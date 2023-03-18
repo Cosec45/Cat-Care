@@ -1,20 +1,25 @@
-<div *ngIf="dataA === []">No data</div>
-<div  class="row">
-  <div class="col-4" *ngFor="let cat of dataA">
-    <div class="container text-center mt-3">
-      <div class="card" style="width: 18rem">
-        <img
-          [src]="cat.img"
-          class="card-img-top"
-          alt="adoptcat"
-        />
-        <div class="card-body">
-          <h5 class="card-title">{{cat.name}}</h5>
-          <p class="card-text">
-            {{cat.adress}},{{cat.country}} <br />
-            {{cat.age}} {{cat.gender}}
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+<div class="container-fluid">
+  <div class="container text-center mt-3" id="nodata">
+    <div *ngIf="dataA.length === 0" style="color: white" class="text-center">
+      <img
+        src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/66/null/external-error-404-networking-smashingstocks-flat-smashing-stocks.png"
+      /><br />
+      no results found
+    </div>
+  </div>
+  <div class="row" *ngIf="dataA.length !== 0">
+    <div class="col-3" *ngFor="let cat of dataA">
+      <div class="container text-center mt-3 ">
+        <div class="card" style="width: 17rem">
+          <img [src]="cat.img" class="card-img-top" alt="adoptcat" />
+          <div class="card-body">
+            <h5 class="card-title">{{ cat.name }}</h5>
+            <p class="card-text">
+              {{ cat.adress }},{{ cat.country }} <br />
+              {{ cat.age }} {{ cat.gender }}
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
     </div>
