@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="row mt-3 d-flex justify-content-center"> 
+        <div class="col-3">
+            <div class="card" >
+                <i class="bi bi-pencil-fill" style="font-size: 70px;" ></i>
+                1. Fill out the adoption form
+            </div>
+            
+        </div>
+        <div class="col-3">
+            <div class="card" >
+                <i class="bi bi-clipboard2-check-fill text-center" style="font-size: 70px;" ></i>
+                2. We Review Your Application
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" >
+                <i class="bi bi-telephone-fill text-center" style="font-size: 70px;" ></i>
+                3. We Setup a Phone CallS
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card" >
+                <i class="bi bi-github text-center" style="font-size: 70px;" ></i>
+                4. You Meet Your Animal
+            </div>
+        </div>
+    </div>
+    <!-- form -->
+    <div class="row mt-3 d-flex justify-content-center">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1 class="mt-3 text-light text-center ">Adoption Process</h1>
+                <div class="container mx-3 py-3 " id="box">
+                    <div class="d-flex justify-content-center">
+                        <input type="text" id="fname" name="fname" placeholder="Name">
+                        <input type="text" id="fname" name="lname" class="ms-2" placeholder="LastName">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <input type="email" id="Email" name="Email" placeholder="Your Email">
+                        <input type="tel" id="Phone" name="Phone" class="ms-2" placeholder="Your Phone">
+                    </div>
+                    <input type="text" id="address" name="address" placeholder="address">
+                    <textarea class="d-flex" id="Mss" name="Message" rows="4" cols="40"
+                    placeholder="How can I help you?"></textarea><br>
+                    <input type="submit" (click)="alert()" value=" submit">
+                </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

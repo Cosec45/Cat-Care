@@ -1,0 +1,71 @@
+#box {
+  border-style: hidden;
+}
+input[type='Email'] {
+  margin: 8px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  border-collapse: collapse;
+  outline: none;
+  display: block;
+  width: 100%;
+}
+input[type='tel'] {
+    margin: 8px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    border-collapse: collapse;
+    outline: none;
+    display: block;
+    width: 100%;
+  }
+input[type='text'] {
+  margin: 8px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 7px;
+  width: 50%;
+}
+#address {
+    margin: 8px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 7px;
+    width: 100%;
+  }
+textarea {
+  margin: 8px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 7px;
+  width: 100%;
+}
+input[type='submit'] {
+  border: none;
+  border-radius: 7px;
+  padding: 10px 40px; /*ปรับขนาดในปุ่ม บนล่าง ซ้ายขวา*/
+  transition: 0.3s;
+  color: #ffffff;
+  background: #3cad55;
+  width: 100%;
+  font-weight: bold;
+}
+#box {
+  text-align: center;
+}
+.card {
+  background-color: rgba(62, 32, 146, 1);
+  border-style: hidden;
+  text-align: center;
+  color: #ffffff;
+}

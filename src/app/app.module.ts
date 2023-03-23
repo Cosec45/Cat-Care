@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { CatPageComponent } from './cat-page/cat-page.component';
+import { AdoptCatComponent } from './adopt-cat/adopt-cat.component';
+import { ProcessComponent } from './process/process.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CatPageComponent } from './cat-page/cat-page.component';
     AboutComponent,
     ContactComponent,
     NoPageFoundComponent,
-    CatPageComponent
+    CatPageComponent,
+    AdoptCatComponent,
+    ProcessComponent
 
   ],
   imports: [
