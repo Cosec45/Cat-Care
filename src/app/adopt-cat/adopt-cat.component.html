@@ -1,10 +1,46 @@
-<div class="row">
-  
-  <div class="col d-flex justify-content-center w-100">
-    <div class="card bg-light d-flex justify-content-center w-100 p-3 m-3">
-        <h1>Name</h1>
-        <a  routerLinkActive=" active " routerLink="/Process" class="btn btn-success">Adopt cat</a> 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="card bg-light w-100 p-3 m-3">
+        <div class="row d-flex justify-content-center">
+          <div class="col">
+            <img style="width: 30rem" src="https://miro.medium.com/v2/resize:fit:1400/1*lS9ZqdEGZrRiTcL1JUgt9w.jpeg" alt="cat"/>
+          </div>
+          <div class="col">
+            <a routerLinkActive=" active " routerLink="/Process" class="btn btn-success w-50 m-3">
+              <i class="bi bi-box2-heart-fill"></i>
+              Apply to Adopt
+            </a>
+          </div>
+        </div>
+        <div class="card m-3">
+          <h5>Facts about cat</h5>
+          <div class="card-body">
+            <div class="row d-flex justify-content-center">
+              <div class="col">
+                <b>id</b> <br />
+                <b>Name</b> <br />
+                <b>Adress</b> <br />
+              </div>
+              <div class="col">
+                <b>Country</b> <br />
+                <b>Gender</b> <br />
+                <b>Age</b> <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="col-2"></div>
+    <button class="carousel-control-prev" type="button" >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
   </div>
-  <div class="col"></div>
 </div>
