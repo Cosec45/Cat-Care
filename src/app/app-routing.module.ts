@@ -15,7 +15,9 @@ const routes: Routes = [
   { path: 'CatCare', component: CatPageComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'Adoptcat', component: AdoptCatComponent },
+  { path: 'Adoptcat/:id', component: AdoptCatComponent },
   { path: 'Process', component: ProcessComponent },
+  { path: 'Process/:id', component: ProcessComponent },
 
   { path: '**', component: NoPageFoundComponent },
 ]

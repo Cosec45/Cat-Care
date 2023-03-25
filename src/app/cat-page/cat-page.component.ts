@@ -13,11 +13,11 @@ export class CatPageComponent {
   constructor(private datanew: CatServiceService,private routing:Router) {}
   ngOnInit(): void {
     this.datanew.getCatsData().subscribe((data)=>{
-      this.dataA = data
+      console.log(data)
+      this.dataA = data.filter(acat=>acat.adopt_user=="-1")
       
+      console.log(this.dataA)
     })
-    setTimeout(() => console.log(this.dataA), 1000);
+    
   }
-  openDetail(cat){
-    this.routing.navigate(['/catdetail',cat.id])}
 }

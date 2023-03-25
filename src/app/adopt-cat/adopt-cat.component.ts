@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,Router } from '@angular/router';
 import { CatServiceService } from '../../app/cat-service.service';
 import { IcatStructure } from '../../assets/data/catStructure';
+
 
 
 @Component({
@@ -11,15 +12,16 @@ import { IcatStructure } from '../../assets/data/catStructure';
 })
 export class AdoptCatComponent {
   id = '';
-  dataA: IcatStructure[] = [];
-  constructor(private datanew: CatServiceService,private routedata:ActivatedRoute) {}
+  dataA: IcatStructure = {};
+  constructor(private datanew: CatServiceService,private routedata:ActivatedRoute,private route:Router) {}
 
   ngOnInit(): void {
     this.id = this.routedata.snapshot.paramMap.get('id')
     console.log(this.id);
     console.log('/'+this.id);
-    this.datanew.getCatsData().subscribe((data)=>{
+    this.datanew.getCatData(this.id).subscribe((data)=>{
       this.dataA = data
+      console.log(this.dataA)
       
     })
   }

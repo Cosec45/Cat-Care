@@ -15,10 +15,10 @@
           <div class="card-body">
             <h5 class="card-title">{{ cat.name }}</h5>
             <p class="card-text">
-              {{ cat.adress }},{{ cat.country }} <br />
+              {{ cat.address }},{{ cat.country }} <br />
               {{ cat.age }} {{ cat.gender }}
             </p>
-            <a  routerLinkActive=" active " routerLink="/Adoptcat" class="btn btn-primary">Adopt</a> 
+            <a  routerLinkActive=" active " [routerLink]="'/Adoptcat/'+cat.id" class="btn btn-primary">Adopt</a> 
           </div>
         </div>
       </div>

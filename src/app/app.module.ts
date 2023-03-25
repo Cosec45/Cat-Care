@@ -10,6 +10,7 @@ import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { CatPageComponent } from './cat-page/cat-page.component';
 import { AdoptCatComponent } from './adopt-cat/adopt-cat.component';
 import { ProcessComponent } from './process/process.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProcessComponent } from './process/process.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
